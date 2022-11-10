@@ -1,0 +1,222 @@
+header {
+  grid-area: header;
+  background-color: #d268f5;
+  color: white;
+  display: flex;
+  text-align: center;
+  padding: 20px 0px;
+  justify-content: space-around;
+}
+.burger {
+  display: none;
+}
+
+body {
+  margin: 0%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu main"
+    "menu main"
+    "footer main";
+
+  background-color: #e4e4e4;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto 1fr auto;
+}
+.menu-mobile {
+  grid-area: menu-mobile;
+}
+
+.filtro {
+  text-align: center;
+  grid-area: menu;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  display: flex;
+  flex-direction: column;
+  background-color: #d268f5;
+}
+input{
+    width: 10rem;
+    height: 1.3rem;
+    border-radius: 8%;
+    border: solid 0;
+    margin: 1rem;
+}
+
+button {
+    align-items: center;
+    width: 10rem;
+    height: 2rem;
+    background-color: purple;
+    color: white;
+    border: none;
+}
+button:hover {
+    background-color: rgb(195, 18, 195);
+  }
+menu div {
+  margin-top: 2px;
+}
+menu div:hover {
+  color: white;
+  cursor: grab;
+}
+.cantidad {
+  color: gray;
+}
+
+main {
+  grid-area: main;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.caja {
+  background-color: white;
+  width: 15rem;
+  text-align: center;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+}
+
+.foto-producto1 {
+  background-image: url("../imgs/brownie\ 1.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 350px;
+}
+.foto-producto2 {
+  background-image: url("../imgs/cheesecake\ 2.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 350px;
+}
+.foto-producto3 {
+  background-image: url("../imgs/cupcake\ 3.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 350px;
+}
+
+.foto-producto4 {
+  background-image: url("../imgs/donuts\ 4.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 350px;
+}
+.foto-producto5 {
+  background-image: url("../imgs/pie-de-limon\ 5.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 350px;
+}
+.foto-producto6 {
+  background-image: url("../imgs/tartaleta\ 6.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 350px;
+}
+.foto-producto7 {
+  background-image: url("../imgs/torta\ 7.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 350px;
+}
+.foto-producto8 {
+  background-image: url("../imgs/berlines\ 8.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 350px;
+}
+.precio {
+  color: gray;
+}
+
+.boton {
+  width: 100%;
+  height: 3rem;
+  background-color: #d268f5;
+  color: white;
+  border: 0px;
+  border-top: 0px;
+  font-size: medium;
+}
+.boton:hover {
+  background-color: #cdc3e6;
+}
+
+.boton:focus {
+  background-color: #e8ebe4;
+}
+footer {
+  grid-area: footer;
+  background-color: rgb(232, 146, 232);
+  color: black;
+  text-align: center;
+  padding: 20px 0px;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+@media (max-width: 576px) {
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+
+    background-color: #e4e4e4;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+  }
+  .caja {
+    background-color: white;
+    width: 100%;
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid gray;
+  }
+  menu {
+    display: none;
+  }
+  menu div:hover {
+    color: rgb(244, 218, 242);
+    cursor: grab;
+  }
+  .burger {
+    display: contents;
+    padding-right: 20px;
+    text-align: end;
+  }
+  .titulo {
+    text-align: center;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 20% 80%;
+  }
+}

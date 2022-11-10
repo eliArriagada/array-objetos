@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasteleria dulce Mia </title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,500&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/1c7d08c196.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
+</head>
+<body>
+    <div class="grid-container">
+        <header>  <span class="titulo"> Pasleteria Dulce Mia</span> <span class="burger" ><i class="fas fa-bars"></i></span></header>
+       
+        <section class="filtro">
+            <h1>Busqueda:</h1>
+            <div>Stock:</div>
+            <div><input type="text" id="stock"></div>
+            <div>Precio</div>
+            <div>Desde: <input type="number" name="" id="desde"> Hasta: <input type="number" name="" id="hasta"></div>
+            <div><button class="search" id="search">Buscar</button> 
+                <button class="search" id="clear">Limpiar</button> </div>
+        </section>
+    
+        <main>
+
+    <div>Productos encontrados: <span id="total" class="total">4</span></div>
+            <section id="productos" class="flex-container productos">
+            </section>
+        </main>
+        <footer>
+            <p><i class="fa fa-facebook"></i>&nbsp;<i class="fa fa-instagram"></i></p>
+           
+             Todos los derechos reservados
+            
+    </footer>
+    </div>
+    <script src="/assets/js/index.js"></script>
+
+</body>
+</html>
